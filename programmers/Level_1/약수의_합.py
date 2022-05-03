@@ -10,3 +10,10 @@ def solution(n):
 
 
 print(solution(12))
+
+
+def sumDivisor(num):
+    return sum([i for i in range(1,num+1) if num%i==0])
+
+
+# 이렇게 if 문을 한줄로...깔끔하게 쓰도록 지향하자
