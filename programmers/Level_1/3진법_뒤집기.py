@@ -1,4 +1,4 @@
-#
+#다시 [1,2,3]
 #
 # def to_notation(n, q):
 #     rev_base = ''
