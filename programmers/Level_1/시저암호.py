@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+
+
+def book_solution(s, n):
+    s = list(s)
+    for i in range(len(s)):
+        if s[i] == ' ':
+            continue
+        corr = ord('A') if s[i].isupper() else ord('a')
+        s[i] = chr((ord(s[i]) - corr + n) % 26 + corr)
+
+
+    return ''.join(s)
+
+
+
+if __name__ == '__main__':
+    result = book_solution("a B z", 4)
+    print(result)
